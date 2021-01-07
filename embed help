@@ -1,0 +1,46 @@
+@client.group(invoke_without_command=True)
+async def help(ctx):
+    em = discord.Embed(title = "Help", description = "Use ~help <command> for more information.",color = ctx.author.color)
+
+    em.add_field(name = "Moderation", value = "warn,kick,ping,ban,unban")
+    em.add_field(name = "Fun", value = "hug,slap,throw,cupcake,nuke")
+
+    await ctx.send(embed = em)
+    
+    
+    
+    @help.command()
+async def kick(ctx):
+    em = discord.Embed(title = "Kick", description = "Kicks member from a guild",color = ctx.author.color)
+    em.add_field(name = "**Syntax**", value = "~kick <member> <reason>")
+    await ctx.send(embed = em)
+
+@help.command()
+async def warn(ctx):   
+    em = discord.Embed(title = "Warn", description = "Warns a member from a guild",color = ctx.author.color)
+    em.add_field(name = "**Syntax**", value = "~warn <member> <reason>")
+    await ctx.send(embed = em)
+
+@help.command()
+async def unban(ctx):   
+    em = discord.Embed(title = "Unban", description = "Unbans a member from a guild",color = ctx.author.color)
+    em.add_field(name = "**Syntax**", value = "~unban <member> <reason>")
+    await ctx.send(embed = em) 
+
+@help.command()
+async def ban(ctx):   
+    em = discord.Embed(title = "Warn", description = "Bans a member from a guild",color = ctx.author.color)
+    em.add_field(name = "**Syntax**", value = "~ban <member> <reason>")
+    await ctx.send(embed = em)  
+
+@help.command()
+async def ping(ctx):   
+    em = discord.Embed(title = "Ping", description = "Gets the latency",color = ctx.author.color)
+    em.add_field(name = "**Syntax**", value = "~ping")
+    await ctx.send(embed = em)   
+
+@help.command()
+async def hug(ctx):   
+    em = discord.Embed(title = "Hug", description = "Give someone a warm hug",color = ctx.author.color)
+    em.add_field(name = "**Syntax**", value = "~hug <member>")
+    await ctx.send(embed = em)
