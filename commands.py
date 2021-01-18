@@ -1,7 +1,7 @@
 import discord
 from discord.ext import commands
 import json
-from datetime import datetim
+from datetime import datetime
 nopm = "You don't have permission to do that"
   
 
