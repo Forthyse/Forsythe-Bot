@@ -52,3 +52,5 @@ async def close(self, ctx, reason=None):
 
 def setup(bot):
 	bot.add_cog(modmail(bot))     
+
+# note this is a work in progess
