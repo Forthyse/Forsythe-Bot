@@ -32,7 +32,7 @@ class modmail(commands.Cog):
 			await channel.send(embed = embed)
 
 		elif isinstance(message.channel, discord.TextChannel):
-			if message.content.startswith(self.client.command_prefix):
+			if message.content.startswith(self.client.command_prefi):
 				pass
 			else:
 				topic = message.channel.topic
