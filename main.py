@@ -38,3 +38,4 @@ if __name__ == '__main__':
             print(f'Failed to load extension \'{extension}\'.\n{exception}')
 
 client.run(config["token"])
+
